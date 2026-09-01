@@ -11,7 +11,7 @@
 
     <groupId>local</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
@@ -49,6 +49,6 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/Meridian74/pet-clinic.git</developerConnection>
-      <tag>pet-clinic-0.0.2</tag>
+      <tag>pet-clinic-0.0.1</tag>
   </scm>
 </project>
