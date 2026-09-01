@@ -2,8 +2,9 @@
 # Project Specific
 ######################
 /build/www/**
-/src/test/javascript/coverage/
-/src/test/javascript/PhantomJS*/
+target/
+*.releaseBackup
+release.properties
 
 ######################
 # Node
