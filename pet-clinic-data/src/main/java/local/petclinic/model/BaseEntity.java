@@ -4,12 +4,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 
 @Getter
 @Setter
 @NoArgsConstructor
-public class PetType extends BaseEntity {
+public class BaseEntity implements Serializable {
 
-    private String name;
+    private Long Id;
 
 }
