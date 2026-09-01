@@ -8,9 +8,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Vet extends Person {
+public class Owner extends Person {
 
 
 }

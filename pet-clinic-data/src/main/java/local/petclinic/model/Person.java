@@ -5,17 +5,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
 
-
-@Getter
 @Setter
-@AllArgsConstructor
+@Getter
 @NoArgsConstructor
-public class Pet {
+public class Person {
 
-    private PetType petType;
-    private Owner owner;
-    private LocalDate birthDate;
+    private String firstName;
+    private String lastName;
+
 
 }
