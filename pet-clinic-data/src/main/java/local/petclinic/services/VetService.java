@@ -1,12 +1,8 @@
 package local.petclinic.services;
 
-import local.petclinic.model.Vet;
-import java.util.Set;
+import local.petclinic.model.Owner;
 
 
-public interface VetService {
+public interface VetService extends CrudService<Owner, Long> {
 
-    Vet findById(Long id);
-    Set<Vet> findAll();
-    Vet save(Vet vet);
 }
