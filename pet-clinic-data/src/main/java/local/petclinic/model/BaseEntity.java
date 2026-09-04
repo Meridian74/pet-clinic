@@ -10,8 +10,8 @@ import java.io.Serializable;
 @Getter
 @Setter
 @NoArgsConstructor
-public class BaseEntity implements Serializable {
+public abstract class BaseEntity implements Serializable {
 
-    private Long Id;
+    private Long id;
 
 }
