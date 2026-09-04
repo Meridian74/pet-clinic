@@ -1,12 +1,12 @@
 package local.petclinic.services.map;
 
 import local.petclinic.model.Owner;
-import local.petclinic.services.CrudService;
+import local.petclinic.services.OwnerService;
 
 import java.util.Set;
 
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -33,4 +33,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
         return super.save(owner.getId(), owner);
     }
 
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 }
