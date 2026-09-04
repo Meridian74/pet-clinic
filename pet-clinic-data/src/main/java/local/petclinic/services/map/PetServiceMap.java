@@ -2,10 +2,12 @@ package local.petclinic.services.map;
 
 import local.petclinic.model.Pet;
 import local.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
 

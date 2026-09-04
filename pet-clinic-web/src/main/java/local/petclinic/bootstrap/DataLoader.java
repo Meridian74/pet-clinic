@@ -4,17 +4,17 @@ import local.petclinic.model.Owner;
 import local.petclinic.model.Vet;
 import local.petclinic.services.OwnerService;
 import local.petclinic.services.VetService;
-import local.petclinic.services.map.OwnerServiceMap;
-import local.petclinic.services.map.VetServiceMap;
+import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 
 @Component
+@AllArgsConstructor
 public class DataLoader implements CommandLineRunner {
 
-    private final OwnerService ownerService = new OwnerServiceMap();
-    private final VetService vetService = new VetServiceMap();
+    private final OwnerService ownerService;
+    private final VetService vetService;
 
 
     @Override
